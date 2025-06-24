@@ -61,7 +61,7 @@ const Layout = ({ children }) => {
 )}
 
       {/* Sidebar */}
-      <div className={`ml-2 rounded-2xl fixed inset-y-0 left-0 z-50 w-64 bg-white dark:bg-gray-800 shadow-lg transform transition-transform duration-300 ease-in-out lg:translate-x-0 ${
+      <div className={`ml-2 rounded-2xl fixed inset-y-0 left-0 z-50 w-64 bg-white shadow-lg transform transition-transform duration-300 ease-in-out lg:translate-x-0 ${
         sidebarOpen ? "translate-x-0" : "-translate-x-full"
       }`}>
         <div className="flex items-center justify-between h-16 px-4 border-b border-gray-200 dark:border-gray-700">
