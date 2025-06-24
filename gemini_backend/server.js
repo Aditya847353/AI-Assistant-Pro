@@ -9,7 +9,7 @@ const port = process.env.PORT || 3001;  // Ensure port is correctly read
 // Enable CORS for your React app's origin
 // IMPORTANT: Adjust 'http://localhost:5173' if your React app runs on a different port (Vite default is often 5173)
 app.use(cors({
-  origin: 'http://localhost:5173' // <--- Changed from 3000 to 5173 for common Vite default
+  origin: 'https://ai-assistant-pro-1.onrender.com' // <--- Changed from 3000 to 5173 for common Vite default
 }));
 app.use(express.json());
 
