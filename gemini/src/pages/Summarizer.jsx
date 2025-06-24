@@ -32,7 +32,7 @@ const Summarizer = () => {
     setFavorited(false); // Reset favorited state on new generation
 
     try {
-      const response = await fetch("http://localhost:3001/summarizer", {
+      const response = await fetch("https://ai-assistant-pro-1vly.onrender.com/summarizer", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
