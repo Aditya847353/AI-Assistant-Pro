@@ -33,7 +33,7 @@ const CodeHelper = () => {
     setFavorited(false); // Reset favorited state on new generation
 
     try {
-      const response = await fetch("http://localhost:3001/code-helper", {
+      const response = await fetch("https://ai-assistant-pro-1vly.onrender.com/code-helper", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
