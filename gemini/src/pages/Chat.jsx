@@ -49,7 +49,7 @@ const Chat = () => {
 
     try {
       // Make a fetch call to your backend server's chat endpoint
-      const response = await fetch('http://localhost:3001/chat', { // <-- IMPORTANT: Ensure this URL is correct for your backend
+      const response = await fetch('https://ai-assistant-pro-1vly.onrender.com/chat', { // <-- IMPORTANT: Ensure this URL is correct for your backend
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
