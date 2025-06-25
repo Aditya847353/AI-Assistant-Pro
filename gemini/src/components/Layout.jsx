@@ -51,7 +51,7 @@ const Layout = ({ children }) => {
   }
 
   return (
-    <div className=" min-h-screen bg-gray-50 transition-colors">
+    <div className=" min-h-screen transition-colors">
       {/* Mobile sidebar backdrop */}
 {sidebarOpen && (
   <div
@@ -64,10 +64,10 @@ const Layout = ({ children }) => {
       <div className={`ml-2 rounded-2xl fixed inset-y-0 left-0 z-50 w-64 bg-white shadow-lg transform transition-transform duration-300 ease-in-out lg:translate-x-0 ${
         sidebarOpen ? "translate-x-0" : "-translate-x-full"
       }`}>
-        <div className="flex items-center justify-between h-16 px-4 border-b border-gray-200 dark:border-gray-700">
+        <div className="flex items-center justify-between h-16 px-4 border-b border-gray-200 ">
           <div className="flex items-center gap-2">
             <Brain className="h-6 w-6 text-blue-600" />
-            <span className="font-bold text-gray-900 dark:text-white">AI Assistant Pro</span>
+            <span className="font-bold text-gray-900 ">AI Assistant Pro</span>
           </div>
           <Button
             variant="ghost"
