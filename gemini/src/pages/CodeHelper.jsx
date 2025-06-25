@@ -228,7 +228,7 @@ const CodeHelper = () => {
             </CardHeader>
             <CardContent>
               {result ? (
-                <pre className="whitespace-pre-wrap text-sm bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-gray-100 p-4 rounded-lg overflow-auto max-h-96">
+                <pre className="whitespace-pre-wrap text-sm bg-gray-50  text-gray-900  p-4 rounded-lg overflow-auto max-h-96">
                   {result}
                 </pre>
               ) : (
