@@ -112,27 +112,27 @@ const Chat = () => {
                     }`}
                   >
                     {message.sender === "ai" && (
-                      <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center dark:bg-blue-900">
-                        <Bot className="h-4 w-4 text-blue-600 dark:text-blue-200" />
+                      <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center">
+                        <Bot className="h-4 w-4 text-blue-600 " />
                       </div>
                     )}
 
                     <div
                       className={`max-w-xs lg:max-w-md px-4 py-2 rounded-lg ${
                         message.sender === "user"
-                          ? "bg-blue-600 text-white dark:bg-blue-800"
-                          : "bg-gray-100 text-gray-900 dark:bg-gray-700 dark:text-gray-100"
+                          ? "bg-blue-600 text-white"
+                          : "bg-gray-100 text-gray-900 "
                       }`}
                     >
                       <p className="text-sm">{message.content}</p>
-                      <span className="text-xs opacity-70 mt-1 block dark:text-gray-300">
+                      <span className="text-xs opacity-70 mt-1 block">
                         {message.timestamp.toLocaleTimeString()}
                       </span>
                     </div>
 
                     {message.sender === "user" && (
-                      <div className="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center dark:bg-gray-600">
-                        <User className="h-4 w-4 text-gray-600 dark:text-gray-300" />
+                      <div className="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center ">
+                        <User className="h-4 w-4 text-gray-600 " />
                       </div>
                     )}
                   </div>
@@ -140,12 +140,12 @@ const Chat = () => {
 
                 {loading && (
                   <div className="flex gap-3 justify-start">
-                    <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center dark:bg-blue-900">
+                    <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center">
                       <Bot className="h-4 w-4 text-blue-600 dark:text-blue-200" />
                     </div>
-                    <div className="bg-gray-100 rounded-lg px-4 py-2 flex items-center gap-2 dark:bg-gray-700">
-                      <Loader2 className="h-4 w-4 animate-spin text-gray-600 dark:text-gray-300" />
-                      <span className="text-sm text-gray-600 dark:text-gray-300">AI is typing...</span>
+                    <div className="bg-gray-100 rounded-lg px-4 py-2 flex items-center gap-2">
+                      <Loader2 className="h-4 w-4 animate-spin text-gray-600 " />
+                      <span className="text-sm text-gray-600">AI is typing...</span>
                     </div>
                   </div>
                 )}
@@ -153,14 +153,14 @@ const Chat = () => {
             </ScrollArea>
             </div>
 
-            <div className=" p-4 dark:border-gray-700">
+            <div className=" p-4 ">
               <form onSubmit={handleSendMessage} className="flex gap-2">
                 <Input
                   value={inputMessage}
                   onChange={(e) => setInputMessage(e.target.value)}
                   placeholder="Type your message..."
                   disabled={loading}
-                  className="flex-1 dark:bg-gray-800 dark:text-gray-100 dark:border-gray-600"
+                  className="flex-1 "
                 />
                 <Button type="submit" disabled={loading || !inputMessage.trim()}>
                   <Send className="h-4 w-4" />
