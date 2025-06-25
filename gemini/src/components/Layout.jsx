@@ -90,8 +90,8 @@ const Layout = ({ children }) => {
                   to={item.href}
                   className={`flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                     isActive
-                      ? "bg-blue-50 text-blue-600 dark:bg-blue-900/20 dark:text-blue-400"
-                      : "text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
+                      ? "bg-blue-50 text-blue-600"
+                      : "text-gray-700 hover:bg-gray-100"
                   }`}
                   onClick={() => setSidebarOpen(false)}
                 >
@@ -104,14 +104,14 @@ const Layout = ({ children }) => {
         </nav>
 
         <div className="absolute bottom-4 left-4 right-4">
-          <div className="p-3 bg-gray-50 dark:bg-gray-700 rounded-lg">
-            <div className="text-sm font-medium text-gray-900 dark:text-white">{user?.name}</div>
-            <div className="text-xs text-gray-500 dark:text-gray-400">{user?.email}</div>
+          <div className="p-3 bg-gray-50 rounded-lg">
+            <div className="text-sm font-medium text-gray-900">{user?.name}</div>
+            <div className="text-xs text-gray-500">{user?.email}</div>
             <Button
               variant="ghost"
               size="sm"
               onClick={handleLogout}
-              className="w-full mt-2 text-red-600 hover:text-red-700 hover:bg-red-50 dark:text-red-400 dark:hover:text-red-300 dark:hover:bg-red-900/20"
+              className="w-full mt-2 text-red-600 hover:text-red-700 hover:bg-red-50"
             >
               <LogOut className="h-4 w-4 mr-2" />
               Logout
