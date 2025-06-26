@@ -186,7 +186,7 @@ const Dashboard = () => {
               Favorites
             </TabsTrigger>
           </TabsList>
-          <div className="w-150">
+          <div className="w-full lg:w-[80%] mx-auto">
           <TabsContent value="history">
             <Card >
               <CardHeader>
